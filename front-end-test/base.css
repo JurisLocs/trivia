@@ -1,0 +1,101 @@
+:root {
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --bg-page: #f1f1f1;
+    --bg-card: #ffffff;
+    --error-color: #d33;
+    --error-bg: #fff0f0;
+    --border-color: #777;
+    --accent-color: #7EB87E;
+    --accent-border: #4D814D;
+}
+
+html, body {
+    font-family: var(--font-family);
+    background-color: var(--bg-page);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.page-wrapper {
+    box-sizing: border-box;
+    background-color: var(--bg-card);
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 5% auto;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.input-error {
+    border-color: var(--error-color);
+    background-color: var(--error-bg);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#errors {
+    border: 1px solid var(--error-color);
+    background: var(--error-bg);
+    color: var(--error-color);
+    padding: 6px;
+    margin-bottom: 10px;
+    display: none;
+    border-radius: 3px;
+}
+
+.row {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.row label {
+    flex: 1 0 150px;
+}
+
+.row input[type=text],
+textarea {
+    flex: 1 0 200px;
+    padding: 6px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.row input[type=text]:focus,
+textarea:focus {
+    border-color: var(--accent-border);
+    outline: none;
+    box-shadow: 0 0 3px rgba(77, 129, 77, 0.4);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+#submit {
+    font-size: 18px;
+    color: #333;
+    display: block;
+    margin-left: auto;
+    padding: 6px 12px;
+    background: var(--accent-color);
+    border: 1px solid var(--accent-border);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+#submit:hover {
+    background: #6ca86c;
+}
+
+#submit:active {
+    transform: scale(0.98);
+}

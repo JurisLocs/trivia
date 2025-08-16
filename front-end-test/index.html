@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="utf-8" />
+    <title>EDU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="base.css" />
+    <script src="base.js" defer></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <h1>Kontaktforma</h1>
+        <div id="errors" aria-live="polite"></div>
+        <form id="contact-form" action="index.html" method="post" novalidate>
+            <div class="row">
+                <label for="full-name">Vārds, Uzvārds: <span class="required">*</span></label>
+                <input type="text" name="full-name" id="full-name" required autocomplete="name" />
+            </div>
+            <div class="row">
+                <label for="telefonanr">Telefons numurs: <span class="required">*</span></label>
+                <input type="text" name="telefonanr" id="telefonanr" required autocomplete="tel" />
+            </div>
+            <div class="row">
+                <label for="address">Adrese:</label>
+                <input type="text" name="address" id="address" autocomplete="street-address" />
+            </div>
+            <div class="row">
+                <label for="zinojums">Ziņojums: <span class="required">*</span></label>
+                <textarea name="zinojums" id="zinojums" required></textarea>
+            </div>
+            <div class="row">
+                <button type="submit" id="submit">Sūtīt &rarr;</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
