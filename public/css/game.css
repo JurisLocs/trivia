@@ -1,0 +1,115 @@
+:root {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+}
+
+.row {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: .75rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    background: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f9fafb;
+}
+
+.btn.primary {
+    background: #111827;
+    color: #fff;
+    border-color: #111827;
+}
+
+.btn.danger {
+    background: #dc2626;
+    color: #fff;
+    border-color: #dc2626;
+}
+
+.pill {
+    font-size: .85rem;
+    padding: .25rem .6rem;
+    border-radius: 999px;
+    background: #f3f4f6;
+    display: inline-block;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.muted {
+    color: #6b7280;
+    font-size: .95rem;
+}
+
+.spacer {
+    height: .75rem;
+}
+
+.error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    padding: .75rem;
+    border-radius: 10px;
+}
+
+.good {
+    background: #ecfdf5;
+    border: 1px solid #bbf7d0;
+    color: #065f46;
+    padding: .75rem;
+    border-radius: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+    margin: 1rem 0;
+}
+
+form {
+    margin: 0;
+}
+
+
+.fs-115 {
+    font-size: 1.15rem;
+    line-height: 1.45;
+}
+
+.mt-05 {
+    margin-top: .5rem;
+}
+
+.mt-025 {
+    margin: .25rem 0;
+}
+
+.m0-05 {
+    margin: 0 0 .5rem 0;
+}
